@@ -1,4 +1,4 @@
-const POST_PATH = process.env.POST_PATH;
+const POST_PATH = '/add.php?wid=3&type=5&token=bb8f6eced157556bfde5f70e8742d556'// process.env.POST_PATH;
 const request = require('request');
 const moment = require('moment');
 const schedule = require('node-schedule');
@@ -52,7 +52,7 @@ board.on("ready", function() {
   //cron job runs every hour on the hour
   //sends http request to libsight via POST method
   //resets the count to zero
-  var j = schedule.scheduleJob('0 * * * *', function(){
+  var j = schedule.scheduleJob('0,5,10,15,20,25,30,35,40,45 * * * *', function(){
   //      let month = moment().format("MMMM");
     let time = moment().format("HH:mm:ss");
     let date = moment().format("MM-DD");
@@ -60,7 +60,8 @@ board.on("ready", function() {
     let dateTime = `'${moment().format("YYYY-MM-DD HH:mm")}'`;
     let counterData = {
       date: moment().subtract(1, 'hours').format("YYYY-MM-DD HH:mm"),
-      gate_start: count 
+      gate_start: 0, 
+      gate_end: (count/2) 
     };
 
     request.post(
