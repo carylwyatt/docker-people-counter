@@ -14,7 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "sudo node gate-counter.js"
+    "start": "node counter-insight.js"
   },
   "repository": {
     "type": "git",

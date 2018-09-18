@@ -1,3 +1,4 @@
+console.log('Hello ' + process.env.WORLD);
 const request = require('request');
 const moment = require('moment');
 const schedule = require('node-schedule');
@@ -85,10 +86,3 @@ j;
 
 });
 
-
-
-
-
-
-
- 

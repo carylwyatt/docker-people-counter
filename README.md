@@ -2,6 +2,20 @@
 
 A dockerized version of [gate-counter](https://github.com/carylwyatt/gate-counter).
 
+## before you build
+
+### javascript file
+
+There are two javascript files in this build:
+  - `counter-insight.js` is the default file and is listed as the start script in the `package.json` file
+  - `counter-google.js` is the alternate format if you don't have access to LibInsight
+    - you can find all of the instructions for setting up the google form in the [gate-counter](https://github.com/carylwyatt/gate-counter) repo
+    - make sure to edit `package.json` start script to reflect google vs insight
+
+### environment variable
+
+If you're using the default LibInsight version of this counter, you will need to find the auth token for your LibInsight dataset.
+
 ## build
 
 `docker build -t [username]/docker-people-counter .`
