@@ -2,7 +2,7 @@ FROM resin/raspberrypi3-node:latest
 
 ENV INITSYSTEM on
 
-ENV POST_PATH /add.php?wid=1&type=5&token=95a5021768d587b39ae13d965a7676cc
+ENV POST_PATH /add.php?wid=5&type=5&token=b63c2e64fbba9780b4273482f4425071
 
 WORKDIR /usr/src/app
 
