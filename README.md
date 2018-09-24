@@ -2,6 +2,8 @@
 
 A dockerized version of [gate-counter](https://github.com/carylwyatt/gate-counter).
 
+*There's much more info in the original repo (link above) about what this people counter does, why it works that way, and how it came to be. Check that out if you have questions.*
+
 ## before you build
 
 ### javascript file
