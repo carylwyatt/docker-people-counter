@@ -8,24 +8,11 @@ const board = new five.Board({
   io: new Raspi()
 });
 
-//====================================================
-/*==========================
-== CHANGE THESE VARIALBES ==
-==       TO MATCH         == 
-==   YOUR GOOGLE FORM     ==
-============================*/
-
-const location = "Location";
-const door = "Front";
 
 //form URL 
 const libinsightURL = `https://ivytech.libinsight.com${POST_PATH}`;
-//
-//DON'T TOUCH THIS ONE
-let count = 0;
 
-//the rest is automagic!
-//=====================================================
+let count = 0;
 
 board.on("ready", function() {
 
@@ -68,7 +55,6 @@ board.on("ready", function() {
       {url: url, form: counterData}, 
       function (error, response, body) {
         console.log('Data sent:  hour= ' + moment().subtract(1, 'hours').format("HH:mm") + ' on ' + date + ' at '+ time);
-        //console.log(url);
 
         //uncomment this console.log to test the form submission result	
        // console.log('body:', body); // Print the form submission result

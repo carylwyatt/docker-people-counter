@@ -4,6 +4,10 @@ A dockerized version of [gate-counter](https://github.com/carylwyatt/gate-counte
 
 *There's much more info in the original repo (link above) about what this people counter does, why it works that way, and how it came to be. Check that out if you have questions.*
 
+## docker hub
+
+You can find this image on docker hub: [carylwyatt/raspberrypi-people-counter](https://hub.docker.com/carylwyatt/raspberrypi-people-counter).
+
 ## before you build
 
 ### javascript file
