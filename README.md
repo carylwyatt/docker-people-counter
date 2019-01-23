@@ -6,7 +6,7 @@ A dockerized version of [gate-counter](https://github.com/carylwyatt/gate-counte
 
 ## docker hub
 
-You can find this image on docker hub: [carylwyatt/raspberrypi-people-counter](https://hub.docker.com/carylwyatt/raspberrypi-people-counter).
+You can find this image on docker hub: [carylwyatt/raspberrypi-people-counter](https://cloud.docker.com/repository/docker/carylwyatt/raspberrypi-people-counter).
 
 ## before you build
 
