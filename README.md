@@ -39,3 +39,7 @@ If you're using the default LibInsight version of this counter, you will need to
 
 This should create a new raspi-IO board, initialize the REPL, and calibrate the sensor. It should then remain open and start counting as people walk in front of it. Every hour on the hour, it should send the data from the previous hour to the LibInsight API. (This will be every 10 minutes in the google version.) To exit the counter, hit Ctrl-C twice. This should stop counting, close the board, and exit and stop the Docker container.  
 
+## history
+
+I kept a work log of my trial and error process developing this. It's quite higgledy-piggledy in nature, but might shed some light on decisions made (if you're interested): [work logs from July-Oct 2018](http://carylwyatt.github.io/blog/2018/08/03/work-log-jul-30)
+
